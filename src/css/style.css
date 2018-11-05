@@ -1,0 +1,58 @@
+body {
+	padding-top: 10px;
+}
+
+/*[class*="col-"] {
+	background-color: lightgreen;
+	border: 2px solid black;
+	border-radius: 6px;
+}
+
+[class*="row"] {
+	background-color: lightgrey;
+	border: 2px solid black;
+	border-radius: 6px;
+	margin:10px;
+}*/
+
+#sidebar{
+  position: fixed;
+}
+
+.sidebar{
+  position: fixed;
+}
+
+header, nav, .projet {
+	padding: 5px 5px;
+	margin:10px;
+}
+
+header {
+	border-bottom: 2px solid whitesmoke;
+}
+
+nav, .titre {
+	font-weight: bold;
+	text-align: center;
+}
+
+.photo {
+	text-align: center;
+	overflow: hidden;
+}
+
+.projet {
+	background-color: whitesmoke;
+}
+
+h1, h4 , nav {
+	/*color: highlight;*/
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
