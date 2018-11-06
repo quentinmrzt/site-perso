@@ -11,7 +11,7 @@ export const SECTIONEXPERIENCES: SectionData[] = [
     titre: "Employé commercial",
     date: "Août 2016",
     lieu: "Intermarché, Contrexéville",
-    detail: ""
+    detail: "Gestion de plusieurs rayons: mise en place, gestion des stocks et approvisionnement."
   },
   {
     titre: "Agent contractuel",
@@ -29,6 +29,6 @@ export const SECTIONEXPERIENCES: SectionData[] = [
     titre: "Pétrisseur",
     date: "Juin à août 2015",
     lieu: "Eurovita, Vittel",
-    detail: "En charge d'un pétrin industriel."
+    detail: "En charge d'un pétrin industriel: gestion des stocks, production selon les commandes et approvisionnement du labo. Suivi qualité,respect de l'hygiène et de la sécurité alimentaire. Travail d'équipe avec la ligne de production."
   }
 ];

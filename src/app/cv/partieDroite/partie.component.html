@@ -5,12 +5,14 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <p class="nomsection">{{ partie.titre }}</p>
+            <div class="titrebarre">
+              <h3><span>{{ partie.titre }}</span></h3>
+            </div>
           </div>
         </div>
 
         <div *ngFor="let section of partie.sections" class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-offset-1 col-lg-10">
 
             <div class="row">
               <div class="col-lg-12">

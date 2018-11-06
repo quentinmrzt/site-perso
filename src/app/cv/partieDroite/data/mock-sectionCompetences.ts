@@ -5,36 +5,30 @@ export const SECTIONCOMPETENCES: SectionData[] = [
     titre: "Langages",
     date: "",
     lieu: "",
-    detail: ""
+    detail: "Java, C, Python, C++, C#, PHP"
 	},
   {
     titre: "Environnement",
     date: "",
     lieu: "",
-    detail: ""
+    detail: "Eclipse, Vi sual Studio, Android Studio"
 	},
   {
     titre: "Système d'exploitation",
     date: "",
     lieu: "",
-    detail: ""
-	},
-  {
-    titre: "",
-    date: "",
-    lieu: "",
-    detail: ""
+    detail: "Windows , Linux"
 	},
   {
     titre: "Bases de données",
     date: "",
     lieu: "",
-    detail: ""
+    detail: "MySQL, Oracle, SQL *Plus"
   },
   {
     titre: "Logiciels",
     date: "",
     lieu: "",
-    detail: ""
+    detail: "Adobe Creative Suite, Gimp"
   }
 ];
