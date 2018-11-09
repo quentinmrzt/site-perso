@@ -1,58 +1,166 @@
 body {
-	padding-top: 10px;
+  background-color: #F2F2F2;
+  /*background-color: #5c83c1;
+  background-color: #080811;
+  background-color: #090d11;*/
 }
 
-/*[class*="col-"] {
-	background-color: lightgreen;
-	border: 2px solid black;
-	border-radius: 6px;
+#photocouverture {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  border-bottom: 4px solid #DBC195;
 }
 
-[class*="row"] {
-	background-color: lightgrey;
-	border: 2px solid black;
-	border-radius: 6px;
-	margin:10px;
-}*/
-
-#sidebar{
-  position: fixed;
+p {
+  margin: 0px;
 }
 
-.sidebar{
-  position: fixed;
+a {
+  color: black;
 }
 
-header, nav, .projet {
-	padding: 5px 5px;
-	margin:10px;
+button {
+  background-color: #DBC195;
+  /*background-color: #879483;*/
+  color: white;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #DBC195;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 2px 10px 2px 10px;
+}
+
+#presentation {
+  display: flex;
+  align-items: center;
+}
+
+#boutoncv {
+  display: flex;
+  justify-content: flex-end;
 }
 
 header {
-	border-bottom: 2px solid whitesmoke;
+  background: white;
+  padding: 0px;
 }
 
-nav, .titre {
-	font-weight: bold;
-	text-align: center;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 35px;
+  margin-bottom: 5px;
 }
 
-.photo {
-	text-align: center;
-	overflow: hidden;
+section {
+  margin-top: 5px;
+  height: 1800px;
+  background-color: white;
 }
 
-.projet {
-	background-color: whitesmoke;
+#photoprofile {
+  text-align: center;
 }
 
-h1, h4 , nav {
-	/*color: highlight;*/
+#photo {
+  width: 90%;
+  margin-top: -50%;
+  border-radius: 100%;
+  border: 4px solid #DBC195;
 }
 
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+#nom {
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  margin: 2px;
+  text-transform: uppercase;
+}
+
+/* Partie section */
+.section {
+  margin: 10px;
+  /*background-color: red;*/
+}
+
+.nomsection {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.contenusection {
+  /*margin-left: 10px;*/
+  /*background-color: green;*/
+}
+
+.puce {
+  font-size: 22px;
+  list-style-type: space-counter;
+  /*margin-left: 10px;*/
+  margin-top: 10px;
+}
+
+.date {
+  font-size: 22px;
+  text-align: right;
+}
+
+.detail {
+  font-size: 18px;
+  text-align: justify;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+/* SECTION FORMATAGE DE TEXTE */
+.espace {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.fa {
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+}
+
+.jaumont {
+  color: #DBC195;
+}
+
+.titrebarre {
+  padding: 1px 10px 1px 10px;
+  background: white;
+}
+
+.titrebarre h2 {
+  padding: 0;
+  margin: 0 0 1em 0;
+  border-bottom: 2px solid #DBC195;
+  /* le trait */
+  color: #DBC195;
+  text-align: center;
+}
+
+.titrebarre h2 span {
+  padding: 0 10px;
+  /* espace autour du nom*/
+  position: relative;
+  /* on sort du flux */
+  top: 13px;
+  /* position par rapport au h1 */
+  background: white;
 }

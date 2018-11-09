@@ -9,6 +9,10 @@ import { ProjetsModule } from './projets/projets.module'
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found.component';
 
+import { CouleurBorderDirective } from './couleur.directive';
+import { CouvertureDirective } from './couverture.directive';
+
+
 @NgModule({
 	imports: [
 		BrowserModule,
@@ -20,7 +24,9 @@ import { PageNotFoundComponent } from './page-not-found.component';
 	],
 	declarations: [
 		AppComponent,
-		PageNotFoundComponent
+		PageNotFoundComponent,
+		CouleurBorderDirective,
+		CouvertureDirective
 	],
 	bootstrap: [AppComponent]
 })
