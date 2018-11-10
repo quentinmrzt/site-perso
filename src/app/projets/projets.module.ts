@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProjetsRoutingModule } from './projets-routing.module';
 
 import { ProjetsComponent } from './projets.component';
+import { ProjetSitePersoComponent } from './sitePerso/sitePerso.component';
 
 @NgModule({
 	imports: [
@@ -10,7 +11,8 @@ import { ProjetsComponent } from './projets.component';
 		ProjetsRoutingModule
 	],
 	declarations: [
-		ProjetsComponent
+		ProjetsComponent,
+		ProjetSitePersoComponent
 	],
 })
 export class ProjetsModule { }

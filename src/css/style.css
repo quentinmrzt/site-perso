@@ -141,12 +141,18 @@ h1, h2, h3, h4 {
   color: #DBC195;
 }
 
+/*  TITRE BARRE */
+.titre {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
 .titrebarre {
   padding: 1px 10px 1px 10px;
   background: white;
 }
 
-.titrebarre h2 {
+.titrebarre .titre {
   padding: 0;
   margin: 0 0 1em 0;
   border-bottom: 2px solid #DBC195;
@@ -155,12 +161,9 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-.titrebarre h2 span {
-  padding: 0 10px;
-  /* espace autour du nom*/
-  position: relative;
-  /* on sort du flux */
-  top: 13px;
-  /* position par rapport au h1 */
+.titrebarre .titre span {
+  padding: 0 10px; /* espace autour du nom*/
+  position: relative; /* on sort du flux */
+  top: 13px; /* position par rapport au h1 */
   background: white;
 }

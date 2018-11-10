@@ -1,0 +1,20 @@
+<section class="row">
+  <!-- TITRE -->
+  <div class="col-lg-12">
+    <div class="titrebarre">
+      <p class="titre"><span>Photos de couverture</span></p>
+    </div>
+  </div>
+
+  <!-- Liste des photos -->
+  <div *ngFor="let photo of photos" class="row">
+    <div class="projetSitePerso">
+      <div class="col-lg-4">
+        <p>Photo prise le {{photo.date}} à {{photo.heure}}.</p>
+        <p>Couleur {{photo.couleur}}.</p>
+      </div>
+
+      <img class="col-lg-8" src="images/couverture/cathedrale/{{photo.heure}}.png" />
+    </div>
+  </div>
+</section>

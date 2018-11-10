@@ -2,9 +2,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { ProjetsComponent } from './projets.component';
+import { ProjetSitePersoComponent } from './sitePerso/sitePerso.component';
 
 const cvRoutes: Routes = [
 	{ path: 'projets', component: ProjetsComponent },
+	{ path: 'projet/sitePerso', component: ProjetSitePersoComponent },
 ];
 
 @NgModule({
