@@ -1,20 +1,55 @@
-<section class="row">
-  <!-- TITRE -->
+<section class="row" id="projetPhotosDeCouverture">
   <div class="col-lg-12">
-    <div class="titrebarre">
-      <p class="titre"><span>Photos de couverture</span></p>
-    </div>
-  </div>
 
-  <!-- Liste des photos -->
-  <div *ngFor="let photo of photos" class="row">
-    <div class="projetSitePerso">
-      <div class="col-lg-4">
-        <p>Photo prise le {{photo.date}} à {{photo.heure}}.</p>
-        <p>Couleur {{photo.couleur}}.</p>
+    <!-- TITRE -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="titrebarre">
+          <p class="titre"><span>Photos de couverture</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div class="row">
+      <div class="col-lg-3">
+        <!-- <div id="projetPhotosDeCouverture_cadran"><img id="projetPhotosDeCouverture_horloge" src="images/projet/jour-nuit.png" /></div> -->
+
+        <div id="projetPhotosDeCouverture_cadran">
+          <article class="clock" id="projetPhotosDeCouverture_horloge">
+            <div class="hours-container">
+              <div class="hours"></div>
+            </div>
+            <div class="minutes-container">
+              <div class="minutes"></div>
+            </div>
+            <div class="seconds-container">
+              <div class="seconds"></div>
+            </div>
+          </article>
+        </div>
       </div>
 
-      <img class="col-lg-8" src="images/couverture/cathedrale/{{photo.heure}}.png" />
+      <div class="col-lg-9">
+        <p id="projetPhotosDeCouverture_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae dignissim augue. Fusce dapibus hendrerit lobortis. Ut ex orci, imperdiet sed est egestas, elementum efficitur dolor. Donec
+          semper gravida nisl, in scelerisque leo
+          fermentum sit amet. Vivamus sit amet tortor nunc. Suspendisse potenti. Nunc nec lorem dictum, tincidunt tellus at, fringilla quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus eu
+          lectus congue, scelerisque libero in, pulvinar sem.</p>
+      </div>
+    </div>
+
+    <!-- LISTE DES PHOTOS -->
+    <div *ngFor="let photo of photos">
+      <div class="row projetPhotosDeCouverture_liste">
+        <div class="col-lg-4 projetPhotosDeCouverture_liste_details">
+          <p>Photo prise le {{photo.date}} à {{photo.heure}}.</p>
+          <p>Couleur {{photo.couleur}}.</p>
+        </div>
+
+        <div class="col-lg-8">
+          <img class="projetPhotosDeCouverture_photo" src="images/couverture/cathedrale/{{photo.heure}}.png" />
+        </div>
+      </div>
     </div>
   </div>
 </section>

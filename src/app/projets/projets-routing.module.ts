@@ -6,7 +6,7 @@ import { ProjetSitePersoComponent } from './sitePerso/sitePerso.component';
 
 const cvRoutes: Routes = [
 	{ path: 'projets', component: ProjetsComponent },
-	{ path: 'projet/sitePerso', component: ProjetSitePersoComponent },
+	{ path: 'projet/photosDeCouverture', component: ProjetSitePersoComponent },
 ];
 
 @NgModule({

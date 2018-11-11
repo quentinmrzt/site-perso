@@ -1,0 +1,38 @@
+#projetPhotosDeCouverture {
+  height: 2600px;
+  font-size: 16px;
+}
+
+#projetPhotosDeCouverture_description {}
+
+#projetPhotosDeCouverture_cadran {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+#projetPhotosDeCouverture_horloge {
+  width: 200px;
+  height: 200px;
+  /*border-radius: 50%;
+  background: DodgerBlue;*/
+}
+
+.projetPhotosDeCouverture_liste {
+  display: flex;
+  margin: 10px;
+}
+
+.projetPhotosDeCouverture_photo {
+  width: 100%;
+}
+
+.projetPhotosDeCouverture_liste_details {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  align-self: center;
+}
