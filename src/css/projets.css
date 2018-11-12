@@ -1,6 +1,16 @@
+/* PARTIE COMMUNE PROJETS */
+#projets, #projetPhotosDeCouverture {
+  font-size: 16px;
+}
+
+/* PROJETS */
+#projets {
+  height: 1850px;
+}
+
+/* PROJET PHOTOS DE COUVERTURE */
 #projetPhotosDeCouverture {
   height: 2600px;
-  font-size: 16px;
 }
 
 #projetPhotosDeCouverture_description {}
