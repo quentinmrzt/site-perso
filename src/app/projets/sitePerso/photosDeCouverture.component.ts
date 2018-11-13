@@ -18,35 +18,21 @@ export class ProjetSitePersoComponent implements OnInit {
 		this.initLocalClocks();
 	}
 
+	private getHeure() {
+		let date = new Date;
+	  let secondes = date.getSeconds();
+	  let minutes = date.getMinutes();
+	  let heures = date.getHours();
+
+		let angleHeures = (heures*30) + (minutes / 2);
+		let angleMinutes = minutes*6;
+		let angleSeconde = secondes*6;
 
 
-	/*
-	 * Starts any clocks using the user's local time
-	 * From: cssanimation.rocks/clocks
-	 */
+	}
+
 	private initLocalClocks() {
-	  // Get the local time using JS
-	  var date = new Date;
-	  var seconds = date.getSeconds();
-	  var minutes = date.getMinutes();
-	  var hours = date.getHours();
-
-	  var aiguilles = [
-	    {
-	      aiguille: 'hours',
-	      angle: (hours * 30) + (minutes / 2)
-	    },
-	    {
-	      aiguille: 'minutes',
-	      angle: (minutes * 6)
-	    },
-	    {
-	      aiguille: 'seconds',
-	      angle: (seconds * 6)
-	    }
-	  ];
-
-	  for (var j = 0; j < aiguilles.length; j++) {
+	  /*for (var j = 0; j < aiguilles.length; j++) {
 	    var elements = document.querySelectorAll('.' + aiguilles[j].aiguille);
 	    for (var k = 0; k < elements.length; k++) {
 	        elements[k].style.webkitTransform = 'rotateZ('+ aiguilles[j].angle +'deg)';
@@ -56,7 +42,7 @@ export class ProjetSitePersoComponent implements OnInit {
 	          elements[k].parentNode.setAttribute('data-second-angle', aiguilles[j + 1].angle);
 	        }
 	    }
-	  }
+	  }*/
 	}
 
 
