@@ -50,6 +50,9 @@
 #sixheure { transform: rotate(90deg); }
 #dixhuitheure { transform: rotate(270deg); }
 
+#heureJour { transform: rotate(0deg); }
+#heureNuit { transform: rotate(0deg); }
+
 /* ANIMATION */
 @keyframes rotation {
   100% {

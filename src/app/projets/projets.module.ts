@@ -4,7 +4,7 @@ import { ProjetsRoutingModule } from './projets-routing.module';
 
 import { ProjetsComponent } from './projets.component';
 import { ProjetSitePersoComponent } from './sitePerso/photosDeCouverture.component';
-import { HorlogeDirective } from './sitePerso/horloge.directive';
+import { CadranDirective } from './sitePerso/cadran.directive';
 
 @NgModule({
 	imports: [
@@ -14,7 +14,7 @@ import { HorlogeDirective } from './sitePerso/horloge.directive';
 	declarations: [
 		ProjetsComponent,
 		ProjetSitePersoComponent,
-		HorlogeDirective
+		CadranDirective
 	],
 })
 export class ProjetsModule { }

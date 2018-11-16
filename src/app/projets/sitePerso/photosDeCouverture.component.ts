@@ -12,10 +12,15 @@ export class ProjetSitePersoComponent implements OnInit {
 
 	private photos:PhotoData[] = DONNEEPHOTOS;
 
+	private heureJour:string = "10h30";
+
 	constructor(private router: Router) { }
 
 	ngOnInit(): void {
+
 	}
+
+
 
 
 }

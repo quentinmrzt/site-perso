@@ -42,7 +42,7 @@ export class CouvertureDirective {
     return this.nomsPhoto[index];
   }
 
-  private heureToMinute(heure:string) {
+  public heureToMinute(heure:string) {
     let tmp = heure.split("h");
     return parseInt(tmp[0])*60 + parseInt(tmp[1]);
   }
