@@ -13,7 +13,9 @@
   height: 2600px;
 }
 
-#projetPhotosDeCouverture_description {}
+#projetPhotosDeCouverture_description {
+  text-align: justify;
+}
 
 #projetPhotosDeCouverture_cadran {
   display: flex;

@@ -33,7 +33,7 @@
 }
 
 /* Aiguille des heures */
-.hours {
+.heures {
   background: #000;
   height: 20%;
   left: 48.75%;
@@ -55,7 +55,7 @@
 }
 
 /* Aiguille des secondes */
-.seconds {
+.secondes {
   background: #000;
   height: 45%;
   left: 49.5%;
