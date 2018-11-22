@@ -17,12 +17,16 @@
           <div id="testCadre">
           <div id="cadranCadre">
             <div id="cadranGlobal">
-              <div class="cadranHeures" id="sixheure">06h00</div>
-              <div class="cadranHeures" id="midi">12h00</div>
-              <div class="cadranHeures" id="dixhuitheure">18h00</div>
               <div class="cadranHeures" id="minuit">00h00</div>
-              <div class="cadranHeures" id="heureJour" projetCadran>{{heureJour}}</div>
-              <div class="cadranHeures" id="cadranCadreJourNuit"><span id="cadranJourNuit"></span></div>
+              <div class="cadranHeures" id="midi">12h00</div>
+
+              <!-- heures affichés selon le levé/couché du soleil -->
+              <div class="cadranHeures" id="heureJour" projetCadran="jour">{{heureJour}}</div>
+              <div class="cadranHeures" id="heureJour" projetCadran="nuit">{{heureNuit}}</div>
+
+              <div class="cadranHeures" id="cadranCadreJourNuit">
+                <span id="cadranJourNuit"></span>
+              </div>
             </div>
           </div>
         </div>

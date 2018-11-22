@@ -20,7 +20,7 @@
   position: relative; /* pour permetre la superposition */
   width: 100%;
   height: 100%;
-  animation: rotation 20s infinite linear;
+  /*animation: rotation 60s infinite linear;*/
 }
 
 #cadranCadreJourNuit {
@@ -34,7 +34,10 @@
   width: 85%;
   height: 85%;
   border-radius: 50%;
+
   background: linear-gradient(MidnightBlue 50%, LightSkyBlue 50%);
+
+  /*border: 2px solid #DBC195;*/
 }
 
 .cadranHeures {
@@ -42,16 +45,12 @@
   position: absolute; /* pour superposer les heures */
   width: 100%;
   height: 100%;
+  color:  #DBC195;
 }
 
 /* Gestion des angles des heures: à gérer plus tard en javascript */
 #minuit { transform: rotate(0deg); }
 #midi { transform: rotate(180deg); }
-#sixheure { transform: rotate(90deg); }
-#dixhuitheure { transform: rotate(270deg); }
-
-#heureJour { transform: rotate(0deg); }
-#heureNuit { transform: rotate(0deg); }
 
 /* ANIMATION */
 @keyframes rotation {
