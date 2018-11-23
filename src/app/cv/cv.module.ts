@@ -3,9 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CVRoutingModule } from './cv-routing.module';
 
 import { CVComponent } from './cv.component';
-import { PartieGaucheCVComponent } from './partieGauche/partieGaucheCV.component';
-import { PartieDroiteCVComponent } from './partieDroite/partieDroiteCV.component';
-import { PartieCVComponent } from './partieDroite/partie.component';
+import { PartieCVComponent } from './partie.component';
 
 @NgModule({
 	imports: [
@@ -14,9 +12,7 @@ import { PartieCVComponent } from './partieDroite/partie.component';
 	],
 	declarations: [
 		CVComponent,
-		PartieGaucheCVComponent,
-		PartieDroiteCVComponent,
-		PartieCVComponent,
+		PartieCVComponent
 	],
 })
 export class CVModule { }

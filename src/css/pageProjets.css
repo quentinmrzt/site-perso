@@ -4,15 +4,8 @@
 }
 
 /* PROJETS */
-#projets {
-  height: 1850px;
-}
 
 /* PROJET PHOTOS DE COUVERTURE */
-#projetPhotosDeCouverture {
-  height: 2600px;
-}
-
 #projetPhotosDeCouverture_description {
   text-align: justify;
 }

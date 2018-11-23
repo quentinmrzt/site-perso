@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PartieData } from "./partieDroite/data/partieData";
+import { PartieData } from "./data/partieData";
 
 @Component({
 	selector: 'cv',

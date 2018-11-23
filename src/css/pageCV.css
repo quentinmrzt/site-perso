@@ -1,0 +1,37 @@
+/* Partie section */
+.section {
+  margin: 10px;
+  /*background-color: red;*/
+}
+
+.nomsection {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.contenusection {
+  /*margin-left: 10px;*/
+  /*background-color: green;*/
+}
+
+.puce {
+  font-size: 22px;
+  list-style-type: space-counter;
+  /*margin-left: 10px;*/
+  margin-top: 10px;
+}
+
+.date {
+  font-size: 22px;
+  text-align: right;
+}
+
+.detail {
+  font-size: 18px;
+  text-align: justify;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  margin-left: 10px;
+}

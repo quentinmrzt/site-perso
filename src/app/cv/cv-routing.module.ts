@@ -9,7 +9,6 @@ const cvRoutes: Routes = [
 	{ path: 'cv/experiences', component: CVComponent },
 	{ path: 'cv/formations', component: CVComponent },
 	{ path: 'cv/projets', component: CVComponent },
-
 ];
 
 @NgModule({
