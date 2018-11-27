@@ -1,54 +1,8 @@
 <script src="./fichier.js" type="text/javascript"></script>
 
 <div class="container">
-  <!-- HAUT DU SITE -->
-  <header class="row">
-    <div class="col-lg-12">
-      <!-- PHOTO DE COUVERTURE -->
-      <div class="row">
-        <a routerLink="/projet/photosDeCouverture"><img couverture class="col-lg-12" id="photocouverture" src="images/couverture/cathedrale/12h31.png" couleurBorderJaumont /></a>
-      </div>
 
-      <div class="row">
-        <div id="presentation">
-          <!-- PHOTO DE PROFILE -->
-          <div class="col-lg-3">
-            <div id="photoprofile">
-              <img id="photo" src="images/profile/photo_3.png" alt="Photo de profile" couleurBorderJaumont />
-            </div>
-          </div>
 
-          <!-- NOM ET TITRE -->
-          <div class="col-lg-9">
-            <div class="row">
-              <div class="col-lg-8">
-                <h1 class="jaumont">quentin morizot</h1>
-              </div>
-              <div class="col-lg-4" id="boutoncv"> <button type="button" onclick="location.href='ressources/CV_Quentin_Morizot.pdf'" class="btn">
-                  <h4>mon cv</h4>
-                </button> </div>
-            </div>
-
-            <div class="row ">
-              <h3 class="col-lg-12 jaumont">étudiant en master génie informatique à metz</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- MENU -->
-      <div class="row">
-        <div class="col-lg-2"></div>
-        <nav class="col-lg-8 texteAvecEspace">
-          <a routerLink="/cv">accueil</a>
-          <a routerLink="/formations">Formations</a>
-          <a routerLink="/experiences">Expériences</a>
-          <a routerLink="/competences">Compétences</a>
-          <a routerLink="/projets">Projets</a>
-        </nav>
-      </div>
-    </div>
-  </header>
 
   <router-outlet></router-outlet>
 </div>

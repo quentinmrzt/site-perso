@@ -3,7 +3,9 @@
 }
 
 .chronologie {
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
   position: relative
   width: 100%;
 }
@@ -56,9 +58,16 @@
 
 
 .chronologie_formation_texte_carre {
-  border: 2px solid #DBC195;
   width: 70%;
   padding: 5px;
+}
+
+.chronologie_gauche {
+  border-right: 2px solid #DBC195;
+}
+
+.chronologie_droite {
+  border-left: 2px solid #DBC195;
 }
 
 .chronologie_formation_texte_carre_titre {
@@ -82,4 +91,20 @@
 .chronologie_formation_image {
   width: 50%;
   height: 100%;
+}
+
+.chronologie_formation_image_conteneur {
+  display: flex;
+  flex-direction: row;
+}
+
+.chronologie_formation_image_photo {
+  border: 2px solid #DBC195;
+  padding: 10px;
+  width: 60%;
+  padding: 5px;
+}
+
+.chronologie_formation_image_photo img {
+    width: 100%;
 }

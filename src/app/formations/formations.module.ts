@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormationsRoutingModule } from './formations-routing.module';
 
 import { FormationsComponent } from './formations.component';
+import { ChronologieComponent } from './chronologie.component';
 
 @NgModule({
 	imports: [
@@ -10,7 +11,8 @@ import { FormationsComponent } from './formations.component';
 		FormationsRoutingModule
 	],
 	declarations: [
-		FormationsComponent
+		FormationsComponent,
+		ChronologieComponent
 	],
 })
 export class FormationsModule { }
