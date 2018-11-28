@@ -34,8 +34,7 @@ h1, h2, h3, h4 {
 .titrebarre .titre {
   padding: 0;
   margin: 0 0 1em 0;
-  border-bottom: 2px solid #DBC195;
-  /* le trait */
+  border-bottom: 2px solid #DBC195;   /* le trait */
   color: #DBC195;
   text-align: center;
 }

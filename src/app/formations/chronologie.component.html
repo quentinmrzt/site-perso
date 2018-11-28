@@ -1,50 +1,18 @@
 <div class="chronologie">
 
-  <div *ngFor="let formation of formations; let i = index">
+  <div *ngFor="let formation of formations; let i = index" class="testputain">
 
-    <!-- Formation Gauche -->
-    <div *ngIf="i%2==0" class="chronologie_formation">
-      <div class="chronologie_formation_texte">
-        <div class="chronologie_formation_texte_carre chronologie_gauche">
-          <p class="chronologie_formation_texte_carre_titre">{{ formation.titre }}</p>
-          <p class="chronologie_formation_texte_carre_lieu texteAvecEspace">{{ formation.lieu }}</p>
-          <p class="chronologie_formation_texte_carre_description">{{ formation.detail }}</p>
-        </div>
-        <div class="chronologie_formation_texte_ligne">
-          <p>{{ formation.date }}</p>
-        </div>
+    <!-- Formation -->
+    <div class="chronologie_formation">
+      <div class="chronologie_formation_date">
+        <p class="texteAvecEspace">{{ formation.date }}</p>
       </div>
 
-      <div *ngIf="afficher" class="chronologie_formation_image">
-        <div *ngIf="afficher" class="chronologie_formation_image_conteneur">
-          <div class="chronologie_formation_texte_ligne"></div>
-
-          <div class="chronologie_formation_image_photo">
-            <img src="images/formations/{{formation.image}}" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Formation Droite -->
-    <div *ngIf="i%2==1" class="chronologie_formation">
-      <div class="chronologie_formation_image">
-        <div *ngIf="afficher" class="chronologie_formation_image_conteneur">
-          <div class="chronologie_formation_image_photo">
-            <img src="images/formations/{{formation.image}}" alt="">
-          </div>
-
-          <div class="chronologie_formation_texte_ligne"></div>
-        </div>
-      </div>
-      <div class="chronologie_formation_texte">
-        <div class="chronologie_formation_texte_ligne">
-          <p>{{ formation.date }}</p>
-        </div>
-        <div class="chronologie_formation_texte_carre chronologie_droite">
-          <p class="chronologie_formation_texte_carre_titre">{{ formation.titre }}</p>
-          <p class="chronologie_formation_texte_carre_lieu texteAvecEspace">{{ formation.lieu }}</p>
-          <p class="chronologie_formation_texte_carre_description">{{ formation.detail }}</p>
+      <div class="chronologie_formation_informations">
+        <div class="chronologie_formation_texte">
+            <p class="chronologie_formation_texte_titre">{{ formation.titre }}</p>
+            <p class="chronologie_formation_texte_lieu texteAvecEspace">{{ formation.lieu }}</p>
+            <p class="chronologie_formation_texte_description">{{ formation.detail }}</p>
         </div>
       </div>
     </div>

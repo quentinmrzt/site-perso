@@ -3,5 +3,5 @@ export class SectionData {
 	date: string;
   lieu: string;
 	detail: string;
-  image: strng;
+  image: string;
 }

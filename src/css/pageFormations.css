@@ -1,110 +1,133 @@
-/* provisoire: pour le moment les pages sont vides */
 #section_formations {
+  padding-bottom: 15px;
 }
 
 .chronologie {
-  margin-left: 10px;
-  margin-right: 10px;
-
   position: relative
   width: 100%;
-}
-
-/* Calque transparent pour la ligne verticale */
-.chronologie::before {
-  content: "";
-  border-left: 2px solid #DBC195;
-  position: absolute;
-  top:0;
-  bottom:0;
-  left:50%;
-  right:0;
-  margin-bottom: 10px;
+  /* taille ligne qui dépasse */
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .chronologie_formation {
   width: 100%;
-  margin-top: 50px;
+}
 
+.chronologie_formation_date {
+  font-size: 16px;
+  background-color: white;
+  position: relative;
+  padding: 15px 0px 15px 0px;
+}
+
+.chronologie_formation_informations {
   display: flex;
   flex-direction: row;
 }
-
 
 .chronologie_formation_texte {
   width: 50%;
-  display: flex;
-  flex-direction: row;
+  padding: 0px 20px 0px 20px;
 }
 
-.chronologie_formation_texte_ligne {
+.chronologie_formation_texte_titre {
   font-size: 20px;
-  text-align: center;
-
-  position: relative;
-  flex: 1;
-}
-
-/* Calque transparent pour la ligne horizontale */
-.chronologie_formation_texte_ligne::before {
-  content: "";
-  border-top: 2px solid #DBC195;
-  position: absolute;
-  top: 12%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-
-.chronologie_formation_texte_carre {
-  width: 70%;
-  padding: 5px;
-}
-
-.chronologie_gauche {
-  border-right: 2px solid #DBC195;
-}
-
-.chronologie_droite {
-  border-left: 2px solid #DBC195;
-}
-
-.chronologie_formation_texte_carre_titre {
-  font-size: 20px;
-  text-align: center;
   text-transform: uppercase;
 }
 
-.chronologie_formation_texte_carre_lieu {
-  font-size: 14px;
-  text-align: center;
+.chronologie_formation_texte_lieu {
+  font-size: 16px;
 }
 
-.chronologie_formation_texte_carre_description {
+.chronologie_formation_texte_description {
   font-size: 12;
-  text-align: justify;
-  padding-top: 5px;
-
+  padding-top: 5px; /* espace de separation avec le titre/lieu */
 }
 
-.chronologie_formation_image {
-  width: 50%;
-  height: 100%;
-}
+@media (max-width: 768px) {
+  .chronologie_formation_texte {
+    margin-left: 5%;
+  }
 
-.chronologie_formation_image_conteneur {
-  display: flex;
-  flex-direction: row;
-}
+  /* Calque transparent pour la ligne verticale */
+  .chronologie::before {
+    content: "";
+    background-color: #DBC195;
+    width: 2px;
 
-.chronologie_formation_image_photo {
-  border: 2px solid #DBC195;
-  padding: 10px;
-  width: 60%;
-  padding: 5px;
-}
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:35px;
+    right:0;
+  }
 
-.chronologie_formation_image_photo img {
+  /* Calque transparent pour la petite ligne verticale */
+  .chronologie_formation_date::before {
+    content: "";
+    width: 10px;
+    border-bottom: 2px solid #DBC195;
+    border-top: 2px solid #DBC195;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:16px;
+    right:0;
+  }
+
+  .chronologie_formation_texte {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Calque transparent pour la ligne verticale */
+  .chronologie::before {
+    content: "";
+    background-color: #DBC195;
+    width: 2px;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    right:0;
+  }
+
+  /* Calque transparent pour la petite ligne verticale */
+  .chronologie_formation_date::before {
+    content: "";
+    width: 10px;
+    margin-left: -4px;
+    border-bottom: 2px solid #DBC195;
+    border-top: 2px solid #DBC195;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    right:0;
+  }
+
+  /* doit être à gauche */
+  .chronologie > .testputain:nth-child(odd) .chronologie_formation_texte {
+    text-align: right;
+  }
+
+  /* doit être à droite */
+  .chronologie > .testputain:nth-child(even) .chronologie_formation_texte {
+    text-align: left;
+    margin-left: 50%;
+  }
+
+  .chronologie_formation_texte {
+    width: 50%;
+  }
+
+  .chronologie_formation_date {
+    text-align: center;
+  }
+
 }

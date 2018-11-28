@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PartieData } from './data/partieData';
+import { SectionData } from '../cv/data/sectionData';
 import { SECTIONFORMATIONS } from '../cv/data/mock-sectionFormations';
 
 @Component({
