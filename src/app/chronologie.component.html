@@ -1,0 +1,17 @@
+<div class="chronologie">
+
+  <!-- Un Element -->
+  <div *ngFor="let section of sections" class="element">
+    <div class="date">
+      <p class="texteAvecEspace">{{ section.date }}</p>
+    </div>
+
+    <div class="informations">
+      <div class="texte">
+        <p class="titre">{{ section.titre }}</p>
+        <p class="lieu texteAvecEspace">{{ section.lieu }}</p>
+        <p class="description">{{ section.detail }}</p>
+      </div>
+    </div>
+  </div>
+</div>

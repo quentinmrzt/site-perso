@@ -1,0 +1,128 @@
+.chronologie {
+  position: relative
+  width: 100%;
+  /* taille ligne qui dépasse */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.chronologie .element {
+  width: 100%;
+}
+
+.chronologie .element .date {
+  font-size: 16px;
+  background-color: white;
+  position: relative;
+  padding: 15px 0px 15px 0px;
+}
+
+.chronologie .element .informations {
+  display: flex;
+  flex-direction: row;
+}
+
+.chronologie .element .texte {
+  width: 50%;
+  padding: 0px 20px 0px 20px;
+}
+
+.chronologie .element .texte .titre {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.chronologie .element .texte .lieu {
+  font-size: 16px;
+}
+
+.chronologie .element .texte .description {
+  font-size: 12;
+  padding-top: 5px; /* espace de separation avec le titre/lieu */
+}
+
+@media (max-width: 768px) {
+  .chronologie .element .texte {
+    margin-left: 5%;
+  }
+
+  /* Calque transparent pour la ligne verticale */
+  .chronologie::before {
+    content: "";
+    background-color: #DBC195;
+    width: 2px;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:35px;
+    right:0;
+  }
+
+  /* Calque transparent pour la petite ligne verticale */
+  .chronologie .element .date::before {
+    content: "";
+    width: 10px;
+    border-bottom: 2px solid #DBC195;
+    border-top: 2px solid #DBC195;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:16px;
+    right:0;
+  }
+
+  .chronologie .element .texte {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Calque transparent pour la ligne verticale */
+  .chronologie::before {
+    content: "";
+    background-color: #DBC195;
+    width: 2px;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    right:0;
+  }
+
+  /* Calque transparent pour la petite ligne verticale */
+  .chronologie .element .date::before {
+    content: "";
+    width: 10px;
+    margin-left: -4px;
+    border-bottom: 2px solid #DBC195;
+    border-top: 2px solid #DBC195;
+
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    right:0;
+  }
+
+  /* doit être à gauche */
+  .chronologie > .element:nth-child(odd) .texte {
+    text-align: right;
+  }
+
+  /* doit être à droite */
+  .chronologie > .element:nth-child(even) .texte {
+    text-align: left;
+    margin-left: 50%;
+  }
+
+  .chronologie .element .texte {
+    width: 50%;
+  }
+
+  .chronologie .element .date {
+    text-align: center;
+  }
+}

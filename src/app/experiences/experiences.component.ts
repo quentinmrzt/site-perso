@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-	selector: 'formations',
+	selector: 'experiences',
 	templateUrl: './app/experiences/experiences.component.html'
 })
 export class ExperiencesComponent implements OnInit {

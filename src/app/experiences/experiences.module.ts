@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ExperiencesRoutingModule } from './experiences-routing.module';
 
 import { ExperiencesComponent } from './experiences.component';
+import { ChronologieExperiencesComponent } from './chronologieExperiences.component';
 
 @NgModule({
 	imports: [
@@ -10,7 +11,8 @@ import { ExperiencesComponent } from './experiences.component';
 		ExperiencesRoutingModule
 	],
 	declarations: [
-		ExperiencesComponent
+		ExperiencesComponent,
+		ChronologieExperiencesComponent
 	],
 })
 export class ExperiencesModule { }

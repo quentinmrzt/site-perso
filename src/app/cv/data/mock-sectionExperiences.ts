@@ -6,34 +6,34 @@ export const SECTIONEXPERIENCES: SectionData[] = [
     date: "Depuis Septembre",
     lieu: "Efluid, Metz",
     resume: "",
-		detail: ""
+		detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla justo, porta id tempus in, pretium eget leo. Duis vulputate vitae elit et gravida. Aenean ultricies ante arcu, id condimentum."
   },
 	{
     titre: "Employé commercial",
     date: "Août 2016",
     lieu: "Intermarché, Contrexéville",
     resume: "Gestion de plusieurs rayons: mise en place, gestion des stocks et approvisionnement.",
-		detail: ""
+		detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla justo, porta id tempus in, pretium eget leo. Duis vulputate vitae elit et gravida. Aenean ultricies ante arcu, id condimentum."
   },
   {
     titre: "Agent contractuel",
     date: "Juillet 2016",
     lieu: "Mairie - Espace Vert, Vittel",
     resume: "",
-		detail: ""
+		detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla justo, porta id tempus in, pretium eget leo. Duis vulputate vitae elit et gravida. Aenean ultricies ante arcu, id condimentum."
   },
   {
     titre: "Serveur / Barman",
     date: "Juillet à août 2016",
     lieu: "La Rotonde, Vittel",
     resume: "",
-		detail: ""
+		detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla justo, porta id tempus in, pretium eget leo. Duis vulputate vitae elit et gravida. Aenean ultricies ante arcu, id condimentum."
   },
   {
     titre: "Pétrisseur",
     date: "Juin à août 2015",
     lieu: "Eurovita, Vittel",
     resume: "En charge d'un pétrin industriel: gestion des stocks, production selon les commandes et approvisionnement du labo. Suivi qualité,respect de l'hygiène et de la sécurité alimentaire. Travail d'équipe avec la ligne de production.",
-		detail: ""
+		detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla justo, porta id tempus in, pretium eget leo. Duis vulputate vitae elit et gravida. Aenean ultricies ante arcu, id condimentum."
   }
 ];
