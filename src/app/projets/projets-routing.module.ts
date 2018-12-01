@@ -5,8 +5,8 @@ import { ProjetsComponent } from './projets.component';
 import { ProjetSitePersoComponent } from './sitePerso/photosDeCouverture.component';
 
 const cvRoutes: Routes = [
-	{ path: 'projets', component: ProjetsComponent },
-	{ path: 'projet/photosDeCouverture', component: ProjetSitePersoComponent },
+	{ path: 'projets', component: ProjetsComponent, data: {animation: 'ProjetsPage'} },
+	{ path: 'projet/photosDeCouverture', component: ProjetSitePersoComponent, data: {animation: 'PhotosDeCouverturePage'} },
 ];
 
 @NgModule({
