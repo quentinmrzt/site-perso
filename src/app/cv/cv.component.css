@@ -1,0 +1,6 @@
+.puce {
+  font-size: 22px;
+  list-style-type: space-counter;
+  /*margin-left: 10px;*/
+  margin-top: 10px;
+}

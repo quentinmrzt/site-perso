@@ -3,7 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
 	selector: 'formations',
-	templateUrl: './app/formations/formations.component.html'
+	templateUrl: './app/formations/formations.component.html',
+	styleUrls: ['./app/formations/formations.component.css']
 })
 export class FormationsComponent implements OnInit {
 

@@ -3,7 +3,8 @@ import { Router } from '@angular/router';
 
 @Component({
 	selector: 'experiences',
-	templateUrl: './app/experiences/experiences.component.html'
+	templateUrl: './app/experiences/experiences.component.html',
+	styleUrls: ['./app/experiences/experiences.component.css']
 })
 export class ExperiencesComponent implements OnInit {
 

@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { SectionData } from '../cv/data/sectionData';
-import { SECTIONFORMATIONS } from '../cv/data/mock-sectionFormations';
+import { SectionData } from '../data/sectionData';
+import { SECTIONFORMATIONS } from '../data/mock-sectionFormations';
 
 @Component({
 	selector: 'chronologie-formations',
-	templateUrl: './app/chronologie.component.html'
+	templateUrl: './app/chronologie.component.html',
+	styleUrls: ['./app/chronologie.component.css']
 })
 export class ChronologieFormationsComponent implements OnInit {
 	private sections: SectionData[];

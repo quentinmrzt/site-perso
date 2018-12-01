@@ -1,11 +1,8 @@
 /* PARTIE COMMUNE PROJETS */
-#projets, #projetPhotosDeCouverture {
+#projetPhotosDeCouverture {
   font-size: 16px;
 }
 
-/* PROJETS */
-
-/* PROJET PHOTOS DE COUVERTURE */
 #projetPhotosDeCouverture_description {
   text-align: justify;
 }

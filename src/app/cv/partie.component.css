@@ -1,7 +1,6 @@
 /* Partie section */
 .section {
   margin: 10px;
-  /*background-color: red;*/
 }
 
 .nomsection {
@@ -26,6 +25,10 @@
 .date {
   font-size: 22px;
   text-align: right;
+}
+
+.lieu {
+  font-size: 16px;
 }
 
 .detail {

@@ -1,15 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { PartieData } from "./data/partieData";
 
 @Component({
 	selector: 'cv',
-	templateUrl: './app/cv/cv.component.html'
+	templateUrl: './app/cv/cv.component.html',
+	styleUrls: ['./app/cv/cv.component.css']
 })
-export class CVComponent implements OnInit {
+export class CVComponent {
 	constructor(private router: Router) { }
-
-	ngOnInit(): void {
-
-	}
 }

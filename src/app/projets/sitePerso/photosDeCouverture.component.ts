@@ -6,7 +6,9 @@ import { DONNEEPHOTOS } from './mock-photos';
 
 @Component({
 	selector: 'projet-site-perso',
-	templateUrl: './app/projets/sitePerso/photosDeCouverture.component.html'
+	templateUrl: './app/projets/sitePerso/photosDeCouverture.component.html',
+	styleUrls: ['./app/projets/sitePerso/photosDeCouverture.component.css']
+
 })
 export class ProjetSitePersoComponent implements OnInit {
 
