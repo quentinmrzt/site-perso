@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormationsComponent } from './formations.component';
 
 const cvRoutes: Routes = [
-	{ path: 'formations', component: FormationsComponent },
+	{ path: 'formations', component: FormationsComponent, data: {animation: 'FormationsPage'} },
 ];
 
 @NgModule({

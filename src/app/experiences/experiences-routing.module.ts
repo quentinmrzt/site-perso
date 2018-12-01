@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExperiencesComponent } from './experiences.component';
 
 const cvRoutes: Routes = [
-	{ path: 'experiences', component: ExperiencesComponent },
+	{ path: 'experiences', component: ExperiencesComponent, data: {animation: 'ExperiencesPage'} },
 ];
 
 @NgModule({

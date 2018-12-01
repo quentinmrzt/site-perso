@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
-import { fadeAnimation } from './animations';
+import { slideInAnimation } from './animations';
 
 @Component({
-	selector: 'site-perso',
-	templateUrl: './app/app.component.html',
-	animations: [fadeAnimation]
+  selector: 'site-perso',
+  templateUrl: './app/app.component.html',
+	animations: [
+    slideInAnimation
+    // animation triggers go here
+  ]
 })
 export class AppComponent {
-
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  }
 }

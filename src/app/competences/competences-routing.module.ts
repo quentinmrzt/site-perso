@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CompetencesComponent } from './competences.component';
 
 const cvRoutes: Routes = [
-	{ path: 'competences', component: CompetencesComponent },
+	{ path: 'competences', component: CompetencesComponent, data: {animation: 'CompetencesPage'} },
 ];
 
 @NgModule({

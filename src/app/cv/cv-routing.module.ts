@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CVComponent } from './cv.component';
 
 const cvRoutes: Routes = [
-	{ path: 'cv', component: CVComponent },
+	{ path: 'cv', component: CVComponent, data: {animation: 'CVPage'} },
 	{ path: 'cv/competences', component: CVComponent },
 	{ path: 'cv/experiences', component: CVComponent },
 	{ path: 'cv/formations', component: CVComponent },
