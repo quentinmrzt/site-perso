@@ -1,5 +1,6 @@
 body {
   background-color: #F2F2F2;
+  /*font-family: "Montserrat";*/
 }
 
 p {
@@ -8,6 +9,7 @@ p {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 section {
@@ -21,6 +23,7 @@ h1, h2, h3, h4 {
 }
 
 /*  TITRE BARRE */
+
 .titre {
   text-transform: uppercase;
   font-size: 22px;
@@ -48,6 +51,38 @@ h1, h2, h3, h4 {
   /* position par rapport au h1 */
   background: white;
 }
+
+/* */
+.soustitre {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.titrebarre {
+  /*padding: 1px 10px 1px 10px;*/
+  background: white;
+}
+
+.titrebarre .soustitre {
+  padding: 0;
+  margin: 0 0 1em 0;
+  border-bottom: 2px solid #DBC195;   /* le trait */
+  color: #DBC195;
+  text-align: left;
+}
+
+.titrebarre .soustitre span {
+  padding: 0 10px;
+  /* espace autour du nom*/
+  position: relative;
+  /* on sort du flux */
+  top: 13px;
+  /* position par rapport au h1 */
+  background: white;
+}
+
+
+
 
 /* SECTION FORMATAGE DE TEXTE */
 .texteAvecEspace {

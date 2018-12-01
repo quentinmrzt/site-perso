@@ -5,9 +5,11 @@
 
         <div class="row">
           <div class="col-lg-12">
-            <div class="titrebarre">
-              <p class="titre"><span>{{ partie.titre }}</span></p>
-            </div>
+            <a routerLink="/{{ partie.titre }}" style="text-decoration:none">
+              <div class="titrebarre">
+                <p class="titre"><span>{{ partie.titre }}</span></p>
+              </div>
+            </a>
           </div>
         </div>
 

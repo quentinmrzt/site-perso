@@ -7,19 +7,19 @@ import { SECTIONCOMPETENCES } from "./mock-sectionCompetences";
 
 export const SECTIONPARTIESDATA: PartieData[] = [
 	{
-    titre: "Projets",
+    titre: "projets",
 		sections: SECTIONPROJETS
 	},
 	{
-    titre: "Formations",
+    titre: "formations",
 		sections: SECTIONFORMATIONS
   },
 	{
-    titre: "Expériences",
+    titre: "experiences",
 		sections: SECTIONEXPERIENCES
   },
 	{
-		titre: "Compétences",
+		titre: "competences",
 		sections: SECTIONCOMPETENCES
 	}
 ];
