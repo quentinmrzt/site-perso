@@ -1,5 +1,5 @@
 body {
-  background-color: #F2F2F2;
+  background-color: white;
   /*font-family: "Montserrat";*/
 }
 
@@ -13,7 +13,7 @@ a {
 }
 
 section {
-  margin-top: 5px;
+  /*margin-top: 5px;*/
   background-color: white;
 }
 
@@ -81,7 +81,12 @@ h1, h2, h3, h4 {
   background: white;
 }
 
-
+.test {
+  /*min-height: 1000px;
+  border-left: 3px solid #DBC195;
+  border-right: 3px solid #DBC195;
+  border-bottom: 3px solid #DBC195;*/
+}
 
 
 /* SECTION FORMATAGE DE TEXTE */

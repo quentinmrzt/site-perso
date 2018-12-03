@@ -1,0 +1,45 @@
+.bordrouge {
+}
+
+#couverture {
+  padding: 0px;
+}
+
+#couverture_photo {
+  width: 100%;
+  border-bottom: 3px solid #DBC195;
+}
+
+#couverture_presentation {
+  display: flex;
+  flex-direction: row;
+}
+
+#couverture_presentation #partie_photo {
+  width: 25%;
+  text-align: center;
+}
+
+#couverture_presentation #partie_photo #photo_profile {
+  width: 90%;
+  margin-top: -50%;
+  border-radius: 100%;
+  border: 3px solid #DBC195;
+}
+
+#couverture_presentation #partie_texte {
+  width: 75%;
+}
+
+#couverture_presentation #partie_texte #ligne_nom_bouton {
+  display: flex;
+  flex-direction: row;
+}
+
+#couverture_presentation #partie_texte #ligne_nom_bouton #nom {
+  width: 80%;
+}
+
+#couverture_presentation #partie_texte #ligne_nom_bouton #bouton {
+  width: 20%;
+}

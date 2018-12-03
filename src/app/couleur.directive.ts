@@ -1,7 +1,7 @@
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
-	selector: '[couleurBorderJaumont]'
+	selector: '[couleurBorderJaumonts]' // avec +s pour test
 })
 export class CouleurBorderDirective {
 

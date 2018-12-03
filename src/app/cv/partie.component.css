@@ -38,3 +38,14 @@
   padding-left: 10px;
   margin-left: 10px;
 }
+
+.soustitrebarre {
+  width: 100%;
+  border-bottom: 1px solid #899787;
+}
+
+.soustitrebarre .soustitre {
+  width: 100%;
+  color: #899787;
+
+}

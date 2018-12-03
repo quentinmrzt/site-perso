@@ -6,6 +6,7 @@ import { slideInAnimation } from './animations';
 @Component({
   selector: 'site-perso',
   templateUrl: './app/app.component.html',
+  styleUrls: ['./app/app.component.css'],
 	animations: [
     slideInAnimation
     // animation triggers go here
