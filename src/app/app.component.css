@@ -33,7 +33,7 @@ header {
   width: 75%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   /*justify-content: center;*/
 }
 
@@ -44,6 +44,7 @@ header {
 
 #couverture_presentation #partie_texte #ligne_nom_bouton #nom {
   width: 80%;
+  margin-bottom: 5px;
 }
 
 #couverture_presentation #partie_texte #ligne_nom_bouton #bouton {
@@ -51,10 +52,8 @@ header {
 }
 
 #couverture_presentation #partie_texte #ligne_nom_bouton #bouton button {
-  width: 100%;
-  height: 100%;
-  background-color: #DBC195;
-  color: white;
+  /*color: #DBC195;
+  border-color: #DBC195;*/
 }
 
 #couverture_presentation #partie_texte #ligne_etude { }
@@ -63,6 +62,7 @@ nav {
   padding-left:15%;
   padding-right:15%;
   width: 100%;
+  height: 40px;
   font-size: 16px;
   display: flex;
   justify-content: space-around;
