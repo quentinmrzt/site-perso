@@ -1,6 +1,7 @@
 body {
   background-color: white;
-  /*font-family: "Montserrat";*/
+  margin: 0 20% 0 20%;
+  font-family: "Montserrat", Helvetica;
 }
 
 p {
@@ -17,7 +18,7 @@ section {
   background-color: white;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   margin: 2px;
   text-transform: uppercase;
 }
@@ -81,6 +82,17 @@ h1, h2, h3, h4 {
   background: white;
 }
 
+.soustitrebarre {
+  width: 100%;
+  border-bottom: 1px solid #97a38d;
+}
+
+.soustitrebarre .soustitre {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #97a38d;
+}
+
 .test {
   /*min-height: 1000px;
   border-left: 3px solid #DBC195;
@@ -98,4 +110,8 @@ h1, h2, h3, h4 {
 
 .jaumont {
   color: #DBC195;
+}
+
+.vert_de_gris {
+  color: #97a38d;
 }

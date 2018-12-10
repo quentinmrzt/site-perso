@@ -22,14 +22,28 @@
   background: DodgerBlue;*/
 }
 
+.description_ligne_boite_texte {
+  display: flex;
+}
+
+.boite_texte {
+  align-self: center;
+}
+
+.testCadre_boite {
+  width: 25%;
+}
+
+.boite_texte {
+  width: 75%;
+}
+
 .projetPhotosDeCouverture_liste {
   display: flex;
   margin: 10px;
 }
 
-.projetPhotosDeCouverture_photo {
-  width: 100%;
-}
+
 
 .projetPhotosDeCouverture_liste_details {
   display: flex;
@@ -37,4 +51,14 @@
 
   text-align: center;
   align-self: center;
+
+  width: 40%;
+}
+
+.projetPhotosDeCouverture_photo_boite {
+  width: 60%;
+}
+
+.projetPhotosDeCouverture_photo {
+  width: 100%;
 }

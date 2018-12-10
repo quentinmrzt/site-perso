@@ -5,12 +5,11 @@
   margin-top: 10px;
 }
 
-.soustitrebarre {
-  width: 100%;
-  border-bottom: 1px solid #97a38d;
+.informations {
+    display: flex;
 }
 
-.soustitrebarre .soustitre {
-  width: 100%;
-  color: #97a38d;
+.infos {
+  width: 50%;
+  padding-left: 10%;
 }

@@ -2,3 +2,25 @@
 #projets {
   font-size: 16px;
 }
+
+.projet {
+  margin: 10px 0 10px 0;
+}
+
+.projet_corps {
+  padding: 10px;
+  display: flex;
+}
+
+.projet_corps .projet_image {
+  width: 40%;
+}
+
+.projet_corps .projet_image img {
+  width: 100%;
+}
+
+.projet_corps .projet_description {
+  width: 60%;
+  padding: 15px;
+}

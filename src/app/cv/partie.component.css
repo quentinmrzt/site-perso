@@ -22,11 +22,6 @@
   /*margin-top: 10px;*/
 }
 
-.date {
-  font-size: 22px;
-  text-align: right;
-}
-
 .lieu {
   font-size: 16px;
 }
@@ -48,4 +43,31 @@
   width: 100%;
   color: #899787;
 
+}
+
+/* NOUVEAU */
+.boite_titre_date {
+  display: flex;
+  padding: 10px 0 0 0;
+}
+
+.boite_titre_date .boite_titre {
+  width: 75%;
+}
+
+.boite_titre_date .boite_titre .titre {
+  font-size: 22px;
+}
+
+.boite_titre_date .boite_date {
+  width: 25%;
+}
+
+.boite_titre_date .boite_date .date {
+  font-size: 22px;
+  text-align: right;
+}
+
+.section_contenu {
+  margin: 0 10% 0 10%;
 }
