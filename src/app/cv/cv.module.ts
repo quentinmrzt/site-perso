@@ -4,6 +4,8 @@ import { CVRoutingModule } from './cv-routing.module';
 
 import { CVComponent } from './cv.component';
 import { PartieCVComponent } from './partie.component';
+import { PartieCompetencesComponent } from './partie-competences.component';
+
 
 @NgModule({
 	imports: [
@@ -12,7 +14,8 @@ import { PartieCVComponent } from './partie.component';
 	],
 	declarations: [
 		CVComponent,
-		PartieCVComponent
+		PartieCVComponent,
+		PartieCompetencesComponent
 	],
 })
 export class CVModule { }

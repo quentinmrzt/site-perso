@@ -1,11 +1,9 @@
 <div *ngFor="let partie of parties" class="contenusection">
   <div class="section">
 
-    <a routerLink="/{{ partie.titre }}" style="text-decoration:none">
       <div class="soustitrebarre">
         <p class="soustitre">{{ partie.titre }}</p>
       </div>
-    </a>
 
     <div *ngFor="let section of partie.sections" class="section_contenu">
 

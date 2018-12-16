@@ -1,6 +1,6 @@
 /* Partie section */
 .section {
-  margin: 10px;
+  margin: 10px 0 10px 0 ;
 }
 
 .nomsection {
@@ -42,7 +42,6 @@
 .soustitrebarre .soustitre {
   width: 100%;
   color: #899787;
-
 }
 
 /* NOUVEAU */
@@ -52,7 +51,7 @@
 }
 
 .boite_titre_date .boite_titre {
-  width: 75%;
+  width: 70%;
 }
 
 .boite_titre_date .boite_titre .titre {
@@ -60,7 +59,7 @@
 }
 
 .boite_titre_date .boite_date {
-  width: 25%;
+  width: 30%;
 }
 
 .boite_titre_date .boite_date .date {

@@ -1,7 +1,38 @@
+@media (max-width: 768px) {
+  #conteneur {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #conteneur {
+      width: 738px;
+  }
+}
+
+@media (min-width: 992px) {
+  #conteneur {
+      width: 962px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #conteneur {
+      width: 1170px;
+  }
+}
+
+#conteneur {
+  position: relative ;
+}
+
 body {
   background-color: white;
-  margin: 0 20% 0 20%;
   font-family: "Montserrat", Helvetica;
+
+  margin: 0px;
+  display: flex;
+  justify-content: center;
 }
 
 p {
@@ -14,7 +45,6 @@ a {
 }
 
 section {
-  /*margin-top: 5px;*/
   background-color: white;
 }
 

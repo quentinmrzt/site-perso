@@ -17,9 +17,5 @@ export const SECTIONPARTIESDATA: PartieData[] = [
 	{
     titre: "experiences",
 		sections: SECTIONEXPERIENCES
-  },
-	{
-		titre: "competences",
-		sections: SECTIONCOMPETENCES
-	}
+  }
 ];
