@@ -5,25 +5,16 @@
         <p class="soustitre">compétences</p>
       </div>
 
-    <div *ngFor="let competence of competences" class="section_contenu">
-
-      <div class="boite_titre_date">
-        <div class="boite_titre">
+    <div class="section_contenu">
+      <div *ngFor="let competence of competences" class="boite_competence">
+        <div class="titre_competence">
           <p class="titre">{{ competence.titre }}</p>
         </div>
-        <div class="boite_date">
-          <p class="date">{{ competence.date }}</p>
+
+        <div class="detail_competence">
+          <p class="detail">{{ competence.resume }}</p>
         </div>
       </div>
-
-      <div *ngIf="competence.lieu!=''" class="boite_lieu">
-        <p class="lieu texteAvecEspace">{{ competence.lieu }}</p>
-      </div>
-
-      <div *ngIf="competence.resume!=''" class="boite_detail">
-        <p class="detail">{{ competence.resume }}</p>
-      </div>
     </div>
-
   </div>
 </div>

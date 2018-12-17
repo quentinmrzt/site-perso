@@ -5,7 +5,7 @@ import { SECTIONCOMPETENCES } from '../data/mock-sectionCompetences';
 @Component({
 	selector: 'partie-competences',
 	templateUrl: './app/cv/partie-competences.component.html',
-  styleUrls: ['./app/cv/partie.component.css']
+  styleUrls: ['./app/cv/partie-competences.component.css', './app/cv/partie.component.css']
 })
 export class PartieCompetencesComponent implements OnInit {
 	private competences: SectionData[];

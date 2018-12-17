@@ -80,7 +80,7 @@ header {
 
 #couverture_presentation #partie_texte #ligne_etude {
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 #couverture_presentation #partie_texte #ligne_description {
@@ -88,16 +88,15 @@ header {
   text-transform: uppercase;
   font-size: 16px;
   margin: 5px 0 5px 0;
+  padding: 5px 0 5px 0;
+  border-top: 2px solid #DBC195;
 }
 
 
-
 nav {
-  height: 40px;
-  padding-left:15%;
-  padding-right:15%;
-  margin-bottom: 5px;
-  font-size: 16px;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
   background-color: white;
   font-size: 18px;
   display: flex;

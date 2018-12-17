@@ -38,7 +38,6 @@ export const slideInAnimation =
           top: 0,
           left: 0,
           width: '100%',
-
           opacity: 0
         }), animate('0.2s', style({ opacity: 1 }))],
         { optional: true }
