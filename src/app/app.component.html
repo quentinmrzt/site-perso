@@ -3,15 +3,19 @@
 
     <!-- MENU -->
     <nav class="texteAvecEspace">
-      <a routerLink="/cv">accueil</a>
-      <a routerLink="/formations">Formations</a>
-      <a routerLink="/experiences">Expériences</a>
-      <a routerLink="/projets">Projets</a>
+      <a (click)="cliqueSurLeMenu()" class="menu texteMenu">MENU</a>
+
+      <div *ngIf="menuOuvert" class="sous_menu">
+        <a routerLink="/cv" class="texteMenu">accueil</a>
+        <a routerLink="/formations" class="texteMenu">Formations</a>
+        <a routerLink="/experiences" class="texteMenu">Expériences</a>
+        <a routerLink="/projets" class="texteMenu">Projets</a>
+      </div>
     </nav>
 
     <!-- PHOTO DE COUVERTURE -->
     <!--<a routerLink="/projet/photosDeCouverture">-->
-      <img couverture id="couverture_photo" src="images/couverture/cathedrale/12h31.png" couleurBorderJaumont />
+    <img couverture id="couverture_photo" src="images/couverture/cathedrale/12h31.png" couleurBorderJaumont />
     <!--</a>-->
 
     <!-- TEXTE -->
