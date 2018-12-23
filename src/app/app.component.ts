@@ -14,13 +14,14 @@ import { slideInAnimation } from './animations';
 })
 export class AppComponent implements OnInit {
 
+  fenetreOrdinateur: boolean = false;
   menuOuvert: boolean = false;
 
   ngOnInit(): void {
     if(window.innerWidth >= 768) {
-      this.menuOuvert = true;
+      this.fenetreOrdinateur = true;
     } else {
-      this.menuOuvert = false;
+      this.fenetreOrdinateur = false;
     }
   }
 
@@ -35,9 +36,9 @@ export class AppComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize() {
     if(window.innerWidth >= 768) {
-      this.menuOuvert = true;
+      this.fenetreOrdinateur = true;
     } else {
-      this.menuOuvert = false;
+      this.fenetreOrdinateur = false;
     }
   }
 }

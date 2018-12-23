@@ -14,6 +14,7 @@ import { PageNotFoundComponent } from './page-not-found.component';
 
 import { CouleurBorderDirective } from './couleur.directive';
 import { CouvertureDirective } from './couverture.directive';
+import { MenuDirective } from './menu.directive';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CouvertureDirective } from './couverture.directive';
 		AppComponent,
 		PageNotFoundComponent,
 		CouleurBorderDirective,
-		CouvertureDirective
+		CouvertureDirective,
+		MenuDirective
 	],
 	bootstrap: [AppComponent]
 })
