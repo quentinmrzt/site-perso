@@ -1,6 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-
 import { slideInAnimation } from './animations';
 
 @Component({
@@ -12,33 +11,19 @@ import { slideInAnimation } from './animations';
     // animation triggers go here
   ]
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
-  fenetreOrdinateur: boolean = false;
-  menuOuvert: boolean = false;
-
-  ngOnInit(): void {
-    if(window.innerWidth >= 768) {
-      this.fenetreOrdinateur = true;
-    } else {
-      this.fenetreOrdinateur = false;
-    }
-  }
+  private menuOuvert: boolean = false;
 
   prepareRoute(outlet: RouterOutlet) {
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 
-  cliqueSurLeMenu() {
+  cliqueMenu() {
     this.menuOuvert = !this.menuOuvert;
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize() {
-    if(window.innerWidth >= 768) {
-      this.fenetreOrdinateur = true;
-    } else {
-      this.fenetreOrdinateur = false;
-    }
+  getOuvert() {
+    return "flex";
   }
 }
