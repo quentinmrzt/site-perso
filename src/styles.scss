@@ -1,28 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 html {
-  overflow: scroll;
+  overflow-y: scroll;
   background-color: white;
 }
 
 // TODO: A REFACTO
+// Partie mobile: doit être inférieur à 768px
 @media (max-width: 768px) {
   #conteneur {
     width: 100%;
   }
 }
 
+// Partie tablette: doit être supérieur à 768px
 @media (min-width: 768px) {
   #conteneur {
       width: 738px;
   }
 }
 
+// Partie ordinateur portable: doit être supérieur à 992px
 @media (min-width: 992px) {
   #conteneur {
       width: 962px;
   }
 }
 
+// Partie ordinateur fixe: doit être supérieur à 1200px
 @media (min-width: 1200px) {
   #conteneur {
       width: 1170px;

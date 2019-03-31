@@ -45,55 +45,52 @@ i {
   /*background-color: green;*/
 }
 
-.puce {
-  font-size: 22px;
-  list-style-type: space-counter;
-  /*margin-left: 10px;*/
-  /*margin-top: 10px;*/
-}
-
 .lieu {
   font-size: 16px;
 }
 
-.detail {
-  font-size: 18px;
-  text-align: justify;
-  border-left: 1px solid black;
-  padding-left: 10px;
-  margin-left: 10px;
-}
-
-.soustitrebarre {
-  width: 100%;
-  border-bottom: 1px solid #899787;
-}
-
-.soustitrebarre .soustitre {
-  width: 100%;
-  color: #899787;
-}
-/* NOUVEAU */
-.boite_titre_date {
+// ZONE TITRE ET DATE
+.boite_titre_et_date {
   display: flex;
   padding: 10px 0 0;
 }
 
-.boite_titre_date .boite_titre {
-  width: 70%;
-}
-
-.boite_titre_date .boite_titre .titre {
+.titre, .date {
   font-size: 22px;
 }
 
-.boite_titre_date .boite_date {
-  width: 30%;
+/* FORMAT MOBILE */
+@media (max-width: 768px) {
+  .boite_titre_et_date {
+    display: block;
+  }
+
+  .boite_titre, .boite_date {
+    width: 100%;
+  }
+
+  .date {
+    text-align: left;
+  }
 }
 
-.boite_titre_date .boite_date .date {
-  font-size: 22px;
-  text-align: right;
+/* FORMAT ORDINATEUR */
+@media (min-width: 768px) {
+  .boite_titre_et_date {
+    display: flex;
+  }
+
+  .boite_titre {
+    width: 70%;
+  }
+
+  .boite_date {
+    width: 30%;
+  }
+
+  .date {
+    text-align: right;
+  }
 }
 
 // --------------------------------------------------
@@ -108,22 +105,18 @@ i {
   //padding-left: 5%;
 }
 
-.detail_competences {
+.boite_detail {
   padding: 5px 0;
 }
-/*
-  // doit être à gauche
-  .section_contenu_competences .boite_competences:nth-of-type(odd) {
-    border: 1px solid black;
-    background: AquaMarine;
-  }
 
-  // doit être à droite
-  .section_contenu_competences .boite_competences:nth-of-type(even) {
-    border: 1px solid black;
-    background: lightsteelblue;
-  }
-*/
+.detail {
+  font-size: 18px;
+  text-align: justify;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
 /* FORMAT MOBILE */
 @media (max-width: 768px) {
   .boite_competences {

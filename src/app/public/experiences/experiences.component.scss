@@ -1,5 +1,8 @@
-.boite_chronologie {
-  position: relative
+.section_formations { }
+
+.division_chronologie {
+  position: relative;
+  margin-bottom: 15px;
 }
 
 .chronologie {
@@ -10,46 +13,47 @@
   padding-bottom: 15px;
 }
 
-.chronologie .element {
+.bloc_section {
   width: 100%;
 }
 
-.chronologie .element .date {
+.bloc_date {
   font-size: 16px;
   background-color: white;
   position: relative;
   padding: 15px 0px 15px 0px;
 }
 
-.chronologie .element .informations {
+.bloc_informations {
   display: flex;
   flex-direction: row;
 }
 
-.chronologie .element .texte {
+.texte {
   width: 50%;
   /* pour que le padding rentre dans le width */
   box-sizing: border-box;
   padding: 0 20px 0 20px;
 }
 
-.chronologie .element .texte .titre {
+.section_titre {
   font-size: 20px;
   text-transform: uppercase;
 }
 
-.chronologie .element .texte .lieu {
+.section_lieu {
   font-size: 16px;
 }
 
-.chronologie .element .texte .description {
+.section_description {
   font-size: 12;
   padding-top: 5px; /* espace de separation avec le titre/lieu */
 }
 
 @media (max-width: 768px) {
-  .chronologie .element .texte {
+  .texte {
     margin-left: 5%;
+    width: 100%;
   }
 
   /* Calque transparent pour la ligne verticale */
@@ -65,12 +69,12 @@
     right:0;
   }
 
-  .chronologie .element .date {
+  .bloc_date {
     text-align: left;
   }
 
   /* Calque transparent pour la petite ligne verticale */
-  .chronologie .element .date::before {
+  .bloc_date::before {
     content: "";
     width: 10px;
     border-bottom: 2px solid #DBC195;
@@ -81,10 +85,6 @@
     bottom:0;
     left:31px;
     right:0;
-  }
-
-  .chronologie .element .texte {
-    width: 100%;
   }
 }
 
@@ -103,7 +103,7 @@
   }
 
   /* Calque transparent pour la petite ligne verticale */
-  .chronologie .element .date::before {
+  .bloc_date::before {
     content: "";
     width: 10px;
     margin-left: -4px;
@@ -118,21 +118,21 @@
   }
 
   /* doit être à gauche */
-  .chronologie > .element:nth-child(odd) .texte {
+  .chronologie > .bloc_section:nth-child(odd) .texte {
     text-align: right;
   }
 
   /* doit être à droite */
-  .chronologie > .element:nth-child(even) .texte {
+  .chronologie > .bloc_section:nth-child(even) .texte {
     text-align: left;
     margin-left: 50%;
   }
 
-  .chronologie .element .texte {
+  .texte {
     width: 50%;
   }
 
-  .chronologie .element .date {
+  .bloc_date {
     text-align: center;
   }
 }

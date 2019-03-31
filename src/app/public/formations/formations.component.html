@@ -4,19 +4,19 @@
     <p class="titre"><span>Formations</span></p>
   </div>
 
-  <div class="boite_chronologie">
+  <div class="division_chronologie">
     <div class="chronologie">
 
-      <div *ngFor="let section of sections" class="element">
-        <div class="date">
+      <div *ngFor="let section of sections" class="bloc_section">
+        <div class="bloc_date">
           <p class="texteAvecEspace">{{ section.date }}</p>
         </div>
 
-        <div class="informations">
+        <div class="bloc_informations">
           <div class="texte">
-            <p class="titre">{{ section.titre }}</p>
-            <p class="lieu texteAvecEspace">{{ section.lieu }}</p>
-            <p class="description">{{ section.detail }}</p>
+            <p class="section_titre">{{ section.titre }}</p>
+            <p class="section_lieu texteAvecEspace">{{ section.lieu }}</p>
+            <p class="section_description">{{ section.detail }}</p>
           </div>
         </div>
       </div>

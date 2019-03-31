@@ -9,31 +9,31 @@ export class Section {
 export const SECTIONPROJETS: Section[] = [
   {
     titre: "CV en ligne",
-    date: "Depuis Novembre",
+    date: "Depuis Novembre 2018",
     lieu: "",
-    resume: "",
-    detail: "CV sous forme de site internet pour apprendre et mettre en pratique plusieurs technologies du web: HTML / CSS / Javascript / Angular."
+    resume: "CV sous forme de site internet pour apprendre et mettre en pratique plusieurs technologies du web: HTML, CSS, Javascript et le framework Angular.",
+    detail: ""
+  },
+  {
+    titre: "Trim-Me",
+    date: "2017, 2019",
+    lieu: "",
+    resume: "Projet personnel visant à développer une application de traitement d'image.",
+    detail: ""
   },
   {
     titre: "Pac-Man",
     date: "Janvier à Mai 2018",
     lieu: "",
-    resume: "",
-    detail: "Développement d'une interface graphique du jeu Pac-Man et d'un prototype d'intelligence artificielle par programmation génétique en Java."
-  },
-  {
-    titre: "Trim-Me",
-    date: "2017",
-    lieu: "",
-    resume: "",
-    detail: "Projet personnel visant à développer une application de traitement d'image."
+    resume: "Développement d'une interface graphique du jeu Pac-Man et d'un prototype d'intelligence artificielle par programmation génétique en Java.",
+    detail: ""
   },
   {
     titre: "Darlizot",
     date: "2016",
     lieu: "",
-    resume: "",
-    detail: "Conception d'un jeu vidéo codé en C avec la librairie SDL de style plate-fome 2D beat 'em up , très simple, reprenant les sprite de Mega Man."
+    resume: "Conception d'un jeu vidéo codé en C avec la librairie SDL de style plate-fome 2D beat 'em up , très simple, reprenant les sprite de Mega Man.",
+    detail: ""
   }
 ];
 
@@ -43,28 +43,28 @@ export const SECTIONFORMATIONS: Section[] = [
     date: "2017 - 2019",
     lieu: "UFR MIM - Université de Lorraine, Metz",
     resume: "",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus metus, pretium dapibus dapibus a, ultrices in libero. Donec eu congue lacus. Morbi mollis enim cursus erat suscipit elementum. In at pulvinar risus. In placerat mi in dui blandit egestas. In id est rhoncus, tincidunt sapien id, eleifend dui. Donec ac tellus est. Sed vestibulum, felis eget volutpat dictum, felis massa facilisis quam, ut tempor eros ante sed diam. Mauris feugiat pharetra mi. Maecenas metus odio, facilisis in neque in, tempus blandit erat."
+    detail: "Je réalise mon master à l'UFR MIM de Metz dans la spécialité Génie Informatique. Ce master est différent des autres car il est généraliste, les cours sont dispensés par des intervenants provenant du secteur privé et il n’est accessible qu’en alternance. J’ai pu au cours de celui-ci suivre deux options s’intitulant \"les nouveaux défis du manager\" et \"management et gestion de projet\"."
   },
   {
     titre: "Licence en Informatique",
     date: "2014 - 2017",
     lieu: "FST - Université de Lorraine, Nancy",
     resume: "",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus metus, pretium dapibus dapibus a, ultrices in libero. Donec eu congue lacus. Morbi mollis enim cursus erat suscipit elementum. In at pulvinar risus. In placerat mi in dui blandit egestas. In id est rhoncus, tincidunt sapien id, eleifend dui. Donec ac tellus est. Sed vestibulum, felis eget volutpat dictum, felis massa facilisis quam, ut tempor eros ante sed diam. Mauris feugiat pharetra mi. Maecenas metus odio, facilisis in neque in, tempus blandit erat."
+    detail: "Ma réorientation m'a conduit à la Licence Informatique à la Faculté des Sciences et Technologies (FST) de Nancy. J’y ai acquis les connaissances fondamentales dans les principaux domaines de l’informatique. J’ai aussi pu suivre la matière libre \"introduction pluridisciplinaire aux sciences de l'administration et du management\" en L2."
   },
   {
     titre: "Première année en Biologie",
     date: "2013 - 2014",
     lieu: "FST - Université de Lorraine, Nancy",
     resume: "",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus metus, pretium dapibus dapibus a, ultrices in libero. Donec eu congue lacus. Morbi mollis enim cursus erat suscipit elementum. In at pulvinar risus. In placerat mi in dui blandit egestas. In id est rhoncus, tincidunt sapien id, eleifend dui. Donec ac tellus est. Sed vestibulum, felis eget volutpat dictum, felis massa facilisis quam, ut tempor eros ante sed diam. Mauris feugiat pharetra mi. Maecenas metus odio, facilisis in neque in, tempus blandit erat."
+    detail: "À la suite de l’obtention de mon baccalauréat j’ai eu dans l’optique de faire une Licence en Biologie au sein de la Faculté des Sciences et Technologies (FST) de Nancy. N’ayant pas retrouvé la vision de la biologie que je m’étais fait au lycée, j’ai pris la décision d’arrêter à la fin du deuxième semestre pour me réorienter."
   },
   {
     titre: "Baccalauréat Scientifique",
     date: "2013",
     lieu: "Lycée Jean Baptiste Vuillaume, Mirecourt",
     resume: "",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus metus, pretium dapibus dapibus a, ultrices in libero. Donec eu congue lacus. Morbi mollis enim cursus erat suscipit elementum. In at pulvinar risus. In placerat mi in dui blandit egestas. In id est rhoncus, tincidunt sapien id, eleifend dui. Donec ac tellus est. Sed vestibulum, felis eget volutpat dictum, felis massa facilisis quam, ut tempor eros ante sed diam. Mauris feugiat pharetra mi. Maecenas metus odio, facilisis in neque in, tempus blandit erat."
+    detail: "Obtention de mon baccalauréat scientifique au lycée Jean Baptiste Vuillaume à Mirecourt avec pour spécialité les Sciences de la Vie et de la Terre (SVT) et comme option l’Informatique et les Sciences du Numérique (ISN). J’ai eu l’occasion aussi de suivre l’option Cinéma avec, comme finalité, la réalisation d’un cours métrage."
   }
 ];
 
@@ -95,14 +95,21 @@ export const SECTIONEXPERIENCES: Section[] = [
     date: "Juillet à août 2016",
     lieu: "La Rotonde, Vittel",
     resume: "",
-    detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nulla justo, porta id tempus in, pretium eget leo. Duis vulputate vitae elit et gravida. Aenean ultricies ante arcu, id condimentum."
+    detail: ""
   },
   {
     titre: "Pétrisseur",
     date: "Juin à août 2015",
     lieu: "Eurovita, Vittel",
     resume: "",
-    detail: "En charge d'un pétrin industriel: gestion des stocks, production selon les commandes et approvisionnement du labo. Suivi qualité,respect de l'hygiène et de la sécurité alimentaire. Travail d'équipe avec la ligne de production."
+    detail: "En charge d'un pétrin industriel: gestion des stocks, production selon les commandes et approvisionnement du labo. Suivi qualité, respect de l'hygiène et de la sécurité alimentaire. Travail d'équipe avec la ligne de production."
+  },
+  {
+    titre: "Agent de production",
+    date: "Mai 2015",
+    lieu: "DS Smith Kaypac, Vittel",
+    resume: "",
+    detail: "Divers travaux de production et de manutention comme l'assemblage en série de cartons à l'aide d'une agrapheuse et colleuse industrielle et le stockage de ceux-ci."
   }
 ];
 
@@ -118,7 +125,7 @@ export const SECTIONCOMPETENCES: Section[] = [
 		titre: "Technologies web",
 		date: "",
 		lieu: "",
-		resume: "HTML, CSS, JavaScript, TypeScript, PHP",
+		resume: "JavaScript, TypeScript, PHP",
 		detail: ""
 	},
 	{
