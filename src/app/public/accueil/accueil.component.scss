@@ -1,0 +1,138 @@
+// --------------------------------------------------
+// GÉNÉRAL
+.section_contenu {
+  margin: 0 10%;
+}
+
+// --------------------------------------------------
+// INFORMATIONS
+.informations {
+  display: flex;
+}
+
+.colonneinfos {
+  width: 50%;
+  padding-left: 10%;
+}
+
+.puce {
+  font-size: 22px;
+  list-style-type: space-counter;
+  margin-top: 10px;
+}
+
+i {
+  width: 30px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+// --------------------------------------------------
+// PROJETS & FORMATIONS & EXPERIENCES
+.section {
+  margin: 10px 0;
+}
+
+.nomsection {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.contenusection {
+  /*margin-left: 10px;*/
+  /*background-color: green;*/
+}
+
+.puce {
+  font-size: 22px;
+  list-style-type: space-counter;
+  /*margin-left: 10px;*/
+  /*margin-top: 10px;*/
+}
+
+.lieu {
+  font-size: 16px;
+}
+
+.detail {
+  font-size: 18px;
+  text-align: justify;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.soustitrebarre {
+  width: 100%;
+  border-bottom: 1px solid #899787;
+}
+
+.soustitrebarre .soustitre {
+  width: 100%;
+  color: #899787;
+}
+/* NOUVEAU */
+.boite_titre_date {
+  display: flex;
+  padding: 10px 0 0;
+}
+
+.boite_titre_date .boite_titre {
+  width: 70%;
+}
+
+.boite_titre_date .boite_titre .titre {
+  font-size: 22px;
+}
+
+.boite_titre_date .boite_date {
+  width: 30%;
+}
+
+.boite_titre_date .boite_date .date {
+  font-size: 22px;
+  text-align: right;
+}
+
+// --------------------------------------------------
+// COMPÉTENCES
+.section_contenu_competences {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.boite_competences {
+  box-sizing: border-box;
+  //padding-left: 5%;
+}
+
+.detail_competences {
+  padding: 5px 0;
+}
+/*
+  // doit être à gauche
+  .section_contenu_competences .boite_competences:nth-of-type(odd) {
+    border: 1px solid black;
+    background: AquaMarine;
+  }
+
+  // doit être à droite
+  .section_contenu_competences .boite_competences:nth-of-type(even) {
+    border: 1px solid black;
+    background: lightsteelblue;
+  }
+*/
+/* FORMAT MOBILE */
+@media (max-width: 768px) {
+  .boite_competences {
+    width: 100%;
+  }
+}
+/* FORMAT ORDINATEUR */
+@media (min-width: 768px) {
+  .boite_competences {
+    width: 50%;
+  }
+}

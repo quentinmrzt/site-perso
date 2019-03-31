@@ -1,40 +1,24 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { CVModule } from './cv/cv.module'
-import { FormationsModule } from './formations/formations.module'
-import { ExperiencesModule } from './experiences/experiences.module'
-import { CompetencesModule } from './competences/competences.module'
-import { ProjetsModule } from './projets/projets.module'
-
 import { AppComponent } from './app.component';
-import { PageNotFoundComponent } from './page-not-found.component';
-
-import { CouleurBorderDirective } from './couleur.directive';
-import { CouvertureDirective } from './couverture.directive';
-import { MenuDirective } from './menu.directive';
-
+import { CoreModule } from './core/core.module';
+import { PublicModule } from './public/public.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-	imports: [
-		BrowserModule,
-		BrowserAnimationsModule,
-		CVModule,
-		FormationsModule,
-		ExperiencesModule,
-		CompetencesModule,
-		ProjetsModule,
-		AppRoutingModule
-	],
-	declarations: [
-		AppComponent,
-		PageNotFoundComponent,
-		CouleurBorderDirective,
-		CouvertureDirective,
-		MenuDirective
-	],
-	bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    CoreModule,
+    PublicModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,154 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  overflow: scroll;
+  background-color: white;
+}
+
+// TODO: A REFACTO
+@media (max-width: 768px) {
+  #conteneur {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #conteneur {
+      width: 738px;
+  }
+}
+
+@media (min-width: 992px) {
+  #conteneur {
+      width: 962px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #conteneur {
+      width: 1170px;
+  }
+}
+
+#conteneur {
+  position: relative ;
+}
+
+body {
+  background-color: white;
+  font-family: "Montserrat", Helvetica;
+
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  margin: 0px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+section {
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 2px;
+  text-transform: uppercase;
+}
+
+/*  TITRE BARRE */
+
+.titre {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.titrebarre {
+  /*padding: 1px 10px 1px 10px;*/
+  background: white;
+}
+
+.titrebarre .titre {
+  padding: 0;
+  margin: 0 0 1em 0;
+  border-bottom: 2px solid #DBC195;   /* le trait */
+  color: #DBC195;
+  text-align: center;
+}
+
+.titrebarre .titre span {
+  padding: 0 10px;
+  /* espace autour du nom*/
+  position: relative;
+  /* on sort du flux */
+  top: 13px;
+  /* position par rapport au h1 */
+  background: white;
+}
+
+/* */
+.soustitre {
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+.titrebarre {
+  /*padding: 1px 10px 1px 10px;*/
+  background: white;
+}
+
+.titrebarre .soustitre {
+  padding: 0;
+  margin: 0 0 1em 0;
+  border-bottom: 2px solid #DBC195;   /* le trait */
+  color: #DBC195;
+  text-align: left;
+}
+
+.titrebarre .soustitre span {
+  padding: 0 10px;
+  /* espace autour du nom*/
+  position: relative;
+  /* on sort du flux */
+  top: 13px;
+  /* position par rapport au h1 */
+  background: white;
+}
+
+.soustitrebarre {
+  width: 100%;
+  border-bottom: 1px solid #97a38d;
+}
+
+.soustitrebarre .soustitre {
+  margin-left: 10%;
+  margin-right: 10%;
+  color: #97a38d;
+}
+
+.test {
+  /*min-height: 1000px;
+  border-left: 3px solid #DBC195;
+  border-right: 3px solid #DBC195;
+  border-bottom: 3px solid #DBC195;*/
+}
+
+
+/* SECTION FORMATAGE DE TEXTE */
+.texteAvecEspace {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /*font-size: 18px;*/
+}
+
+.jaumont {
+  color: #DBC195;
+}
+
+.vert_de_gris {
+  color: #97a38d;
+}

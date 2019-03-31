@@ -4,14 +4,15 @@ import { slideInAnimation } from './animations';
 
 @Component({
   selector: 'site-perso',
-  templateUrl: './app/app.component.html',
-  styleUrls: ['./app/app.component.css'],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
   animations: [
     slideInAnimation
     // animation triggers go here
   ]
 })
 export class AppComponent {
+  title = 'site-perso';
 
   private menuOuvert: boolean = false;
 

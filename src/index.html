@@ -1,40 +1,41 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Quentin Morizot</title>
+<!doctype html>
+<html lang="fr">
 
-    <base href="/">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <title>Quentin Morizot</title>
+  <base href="/">
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet"> -->
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137370230-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/cadran.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/grille.css"> -->
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-137370230-1');
+  </script>
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet"> -->
+  <!--<script>
+    alert("Bonjour. Pour information vous vous dirigez vers un site en construction. Bonne visite !");
+  </script>-->
 
-    <link rel="icon" type="image/png" href="./images/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+<body>
+  <div id="conteneur">
+    <site-perso></site-perso>
+  </div>
+</body>
 
-    <script src="systemjs.config.js"></script>
-    <script>
-      System.import('dist/main.js').catch(function(err){ console.error(err); });
-    </script>
-  </head>
-
-  <body>
-    <div id="conteneur">
-      <site-perso></site-perso>
-    </div>
-  </body>
 </html>

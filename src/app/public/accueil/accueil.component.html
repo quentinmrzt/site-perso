@@ -1,0 +1,77 @@
+<section id="partieCV">
+
+  <div class="titrebarre">
+    <p class="titre"><span>accueil</span></p>
+  </div>
+
+  <div class="soustitrebarre">
+    <p class="soustitre">informations</p>
+  </div>
+
+  <div class="informations">
+    <div class="colonneinfos">
+      <p class="puce"><i class="fas fa-birthday-cake"></i>23 ans</p>
+      <p class="puce"><i class="fas fa-map-pin"></i>Metz - Grand Est, France</p>
+      <p class="puce"><i class="fas fa-envelope"></i>quentin.morizot@outlook.fr</p>
+    </div>
+
+    <div class="colonneinfos">
+      <p class="puce"><a href="https://www.linkedin.com/in/quentin-morizot/"><i class="fab fa-linkedin-in"></i>Linkedin</a></p>
+      <p class="puce"><a href="https://github.com/quentinmrzt"><i class="fab fa-github"></i>Github</a></p>
+    </div>
+  </div>
+
+  <!-- partie-cv -->
+  <div *ngFor="let partie of parties" class="contenusection">
+    <div class="section">
+
+      <div class="soustitrebarre">
+        <p class="soustitre">{{ partie.titre }}</p>
+      </div>
+
+      <div *ngFor="let section of partie.sections" class="section_contenu">
+
+        <div class="boite_titre_date">
+          <div class="boite_titre">
+            <p class="titre">{{ section.titre }}</p>
+          </div>
+          <div class="boite_date">
+            <p class="date">{{ section.date }}</p>
+          </div>
+        </div>
+
+        <div *ngIf="section.lieu!=''" class="boite_lieu">
+          <p class="lieu texteAvecEspace">{{ section.lieu }}</p>
+        </div>
+
+        <div *ngIf="section.resume!=''" class="boite_detail">
+          <p class="detail">{{ section.resume }}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- partie-competences -->
+  <div class="contenusection">
+    <div class="section">
+
+        <div class="soustitrebarre">
+          <p class="soustitre">compétences</p>
+        </div>
+
+      <div class="section_contenu section_contenu_competences">
+        <div *ngFor="let competence of competences" class="boite_competences">
+          <div class="titre_competences">
+            <p class="titre">{{ competence.titre }}</p>
+          </div>
+
+          <div class="detail_competences">
+            <p class="detail">{{ competence.resume }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

@@ -4,7 +4,6 @@ import {
   transition,
   style,
   query,
-  animateChild, group
 } from '@angular/animations';
 
 export const slideInAnimation =
