@@ -91,7 +91,7 @@ export const SECTIONEXPERIENCES: Section[] = [
     detail: ""
   },
   {
-    titre: "Serveur / Barman",
+    titre: "Serveur & Barman",
     date: "Juillet à août 2016",
     lieu: "La Rotonde, Vittel",
     resume: "",

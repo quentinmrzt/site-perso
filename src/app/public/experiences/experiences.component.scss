@@ -36,6 +36,15 @@
   padding: 0 20px 0 20px;
 }
 
+.image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  /* pour que le padding rentre dans le width */
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+}
+
 .section_titre {
   font-size: 20px;
   text-transform: uppercase;
@@ -50,10 +59,15 @@
   padding-top: 5px; /* espace de separation avec le titre/lieu */
 }
 
+// Partie mobile: doit être inférieur à 768px
 @media (max-width: 768px) {
   .texte {
     margin-left: 5%;
     width: 100%;
+  }
+
+  .image {
+    display: none;
   }
 
   /* Calque transparent pour la ligne verticale */
@@ -88,6 +102,7 @@
   }
 }
 
+// Partie tablette: doit être supérieur à 768px
 @media (min-width: 768px) {
   /* Calque transparent pour la ligne verticale */
   .chronologie::before {
@@ -120,12 +135,26 @@
   /* doit être à gauche */
   .chronologie > .bloc_section:nth-child(odd) .texte {
     text-align: right;
+    order: 1;
+  }
+
+  /* doit être à droite */
+  .chronologie > .bloc_section:nth-child(odd) .image {
+    justify-content: flex-start;
+    order: 2;
   }
 
   /* doit être à droite */
   .chronologie > .bloc_section:nth-child(even) .texte {
     text-align: left;
-    margin-left: 50%;
+    //margin-left: 50%;
+    order: 2;
+  }
+
+  /* doit être à gauche */
+  .chronologie > .bloc_section:nth-child(even) .image {
+    justify-content: flex-end;
+    order: 1;
   }
 
   .texte {
@@ -135,4 +164,22 @@
   .bloc_date {
     text-align: center;
   }
+
+  img {
+    height: 80px;
+  }
+}
+
+// Partie ordinateur portable: doit être supérieur à 992px
+@media (min-width: 992px) {
+    img {
+      height: 100px;
+    }
+}
+
+// Partie ordinateur fixe: doit être supérieur à 1200px
+@media (min-width: 1200px) {
+    img {
+      height: 120px;
+    }
 }

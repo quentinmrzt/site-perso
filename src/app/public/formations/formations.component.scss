@@ -45,10 +45,6 @@
   padding: 0 20px 0 20px;
 }
 
-img {
-  width: 70%;
-}
-
 .section_titre {
   font-size: 20px;
   text-transform: uppercase;
@@ -63,6 +59,7 @@ img {
   padding-top: 5px; /* espace de separation avec le titre/lieu */
 }
 
+// Partie mobile: doit être inférieur à 768px
 @media (max-width: 768px) {
   .texte {
     margin-left: 5%;
@@ -105,6 +102,7 @@ img {
   }
 }
 
+// Partie tablette: doit être supérieur à 768px
 @media (min-width: 768px) {
   /* Calque transparent pour la ligne verticale */
   .chronologie::before {
@@ -166,4 +164,22 @@ img {
   .bloc_date {
     text-align: center;
   }
+
+  img {
+    height: 80px;
+  }
+}
+
+// Partie ordinateur portable: doit être supérieur à 992px
+@media (min-width: 992px) {
+    img {
+      height: 100px;
+    }
+}
+
+// Partie ordinateur fixe: doit être supérieur à 1200px
+@media (min-width: 1200px) {
+    img {
+      height: 120px;
+    }
 }
