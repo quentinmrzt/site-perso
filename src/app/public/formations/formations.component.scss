@@ -85,9 +85,10 @@
 
   .bloc_date {
     text-align: left;
+    padding-left: 10px;
   }
 
-  /* Calque transparent pour la petite ligne verticale */
+  /* Calque transparent pour la petite ligne horizontale */
   .bloc_date::before {
     content: "";
     width: 10px;
@@ -117,7 +118,7 @@
     right:0;
   }
 
-  /* Calque transparent pour la petite ligne verticale */
+  /* Calque transparent pour la petite ligne horizontale */
   .bloc_date::before {
     content: "";
     width: 10px;

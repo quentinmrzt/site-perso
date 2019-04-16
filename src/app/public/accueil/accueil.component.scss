@@ -8,11 +8,7 @@
 // INFORMATIONS
 .informations {
   display: flex;
-}
-
-.colonneinfos {
-  width: 50%;
-  padding-left: 10%;
+  flex-wrap: wrap;
 }
 
 .puce {
@@ -21,10 +17,28 @@
   margin-top: 10px;
 }
 
+.colonneinfos {
+  box-sizing: border-box;
+}
+
 i {
   width: 30px;
   margin-right: 5px;
   text-align: center;
+}
+
+/* FORMAT MOBILE */
+@media (max-width: 768px) {
+  .colonneinfos {
+    width: 100%;
+  }
+}
+
+/* FORMAT ORDINATEUR */
+@media (min-width: 768px) {
+  .colonneinfos {
+    width: 50%;
+  }
 }
 
 // --------------------------------------------------
