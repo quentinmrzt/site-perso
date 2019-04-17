@@ -40,6 +40,7 @@
 
 .projetPhotosDeCouverture_liste {
   display: flex;
+  flex-wrap: wrap;
   margin: 10px;
 }
 
@@ -50,11 +51,6 @@
   text-align: center;
   align-self: center;
 
-  width: 40%;
-}
-
-.projetPhotosDeCouverture_photo_boite {
-  width: 60%;
 }
 
 .projetPhotosDeCouverture_photo {
@@ -120,5 +116,27 @@
 @keyframes rotation {
   100% {
     transform: rotateZ(-360deg);
+  }
+}
+
+/* VERSION MOBILE */
+@media (max-width: 768px) {
+  .projetPhotosDeCouverture_liste_details {
+    width: 100%;
+  }
+
+  .projetPhotosDeCouverture_photo_boite {
+    width: 100%;
+  }
+}
+
+/* VERSION ORDINATEUR */
+@media (min-width: 769px) {
+  .projetPhotosDeCouverture_liste_details {
+    width: 40%;
+  }
+
+  .projetPhotosDeCouverture_photo_boite {
+    width: 60%;
   }
 }

@@ -10,17 +10,45 @@
 .projet_corps {
   padding: 10px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .projet_corps .projet_image {
-  width: 40%;
-}
-
-.projet_corps .projet_image img {
-  width: 100%;
+  text-align: center;
 }
 
 .projet_corps .projet_description {
-  width: 60%;
+  box-sizing: border-box;
   padding: 15px;
+}
+
+
+/* VERSION MOBILE */
+@media (max-width: 768px) {
+  .projet_corps .projet_image {
+    width: 100%;
+  }
+
+  .projet_corps .projet_description {
+    width: 100%;
+  }
+
+  .projet_corps .projet_image img {
+    width: 250px;
+  }
+}
+
+/* VERSION ORDINATEUR */
+@media (min-width: 769px) {
+  .projet_corps .projet_image {
+    width: 40%;
+  }
+
+  .projet_corps .projet_description {
+    width: 60%;
+  }
+
+  .projet_corps .projet_image img {
+    width: 90%;
+  }
 }
