@@ -3,6 +3,10 @@
   font-size: 16px;
 }
 
+.lien_git:hover {
+  text-decoration: underline;
+}
+
 .projet {
   margin: 10px 0 10px 0;
 }
@@ -22,6 +26,14 @@
   padding: 15px;
 }
 
+.section_technologies_utilises {
+  display: flex;
+  flex-direction: row;
+}
+
+.liste_technologies_utilises ul {
+  margin: 0px;
+}
 
 /* VERSION MOBILE */
 @media (max-width: 768px) {

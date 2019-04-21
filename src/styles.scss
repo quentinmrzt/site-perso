@@ -156,3 +156,17 @@ h1, h2, h3, h4, h5 {
 .vert_de_gris {
   color: #97a38d;
 }
+
+/* VERSION MOBILE */
+@media (max-width: 768px) {
+  .soustitrebarre .soustitre {
+    text-align: center;
+  }
+}
+
+/* VERSION ORDINATEUR */
+@media (min-width: 769px) {
+  .soustitrebarre .soustitre {
+    text-align: left;
+  }
+}
