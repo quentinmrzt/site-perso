@@ -12,8 +12,6 @@ import { slideInAnimation } from './animations';
   ]
 })
 export class AppComponent {
-  title = 'site-perso';
-
   private menuOuvert: boolean = false;
 
   prepareRoute(outlet: RouterOutlet) {

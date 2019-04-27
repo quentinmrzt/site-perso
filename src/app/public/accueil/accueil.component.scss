@@ -2,6 +2,7 @@
 // GÉNÉRAL
 .section_contenu {
   margin: 0 10%;
+  padding: 5px 0;
 }
 
 // --------------------------------------------------
@@ -66,7 +67,6 @@ i {
 // ZONE TITRE ET DATE
 .boite_titre_et_date {
   display: flex;
-  padding: 10px 0 0;
 }
 
 .titre, .date {
@@ -116,11 +116,10 @@ i {
 
 .boite_competences {
   box-sizing: border-box;
-  //padding-left: 5%;
 }
 
 .boite_detail {
-  padding: 5px 0;
+  //padding: 5px 0;
 }
 
 .detail {
@@ -129,6 +128,7 @@ i {
   border-left: 1px solid black;
   padding-left: 10px;
   margin-left: 10px;
+  padding-top: 5px;
 }
 
 /* FORMAT MOBILE */

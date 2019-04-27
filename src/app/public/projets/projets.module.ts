@@ -11,8 +11,8 @@ import { SitePersoComponent } from './site-perso/site-perso.component';
   declarations: [
     ProjetsComponent,
     PhotosDeCouvertureComponent,
-    CadranDirective,
     SitePersoComponent,
+    CadranDirective,
   ],
   imports: [
     SharedModule,
